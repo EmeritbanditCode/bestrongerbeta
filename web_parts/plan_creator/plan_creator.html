@@ -1,0 +1,77 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <h1>Kreator Planu Treningowego</h1>
+
+    <form id="trainingForm">
+      <label for="exercise">Ćwiczenie:</label>
+      <input type="text" id="exercise" required><br><br>
+      
+      <label for="sets">Seria:</label>
+      <input type="number" id="sets" min="1" required><br><br>
+      
+      <label for="reps">Powtórzenia:</label>
+      <input type="number" id="reps" min="1" required><br><br>
+
+      <label for="weight">Ciężar:</label>
+      <input type="number" id="weight" required>
+      <select id="weight_type">
+        <option value="kg">kg</option>
+        <option value="lbs">lbs</option>
+      </select><br><br>
+      
+      <label for="day">Dzień:</label>
+      <select id="day">
+        <option value="poniedziałek">Poniedziałek</option>
+        <option value="wtorek">Wtorek</option>
+        <option value="środa">Środa</option>
+        <option value="czwartek">Czwartek</option>
+        <option value="piątek">Piątek</option>
+        <option value="sobota">Sobota</option>
+        <option value="niedziela">Niedziela</option>
+      </select><br><br>
+      
+      <button type="button" onclick="addExercise()">Dodaj Ćwiczenie</button>
+    </form>
+    
+    <hr>
+    
+    <h2>Plan Treningowy</h2>
+    <div id="trainingPlan">
+      <div id="poniedziałek">
+        <h3>Poniedziałek</h3>
+        <ul></ul>
+      </div>
+      <div id="wtorek">
+        <h3>Wtorek</h3>
+        <ul></ul>
+      </div>
+      <div id="środa">
+        <h3>Środa</h3>
+        <ul></ul>
+      </div>
+      <div id="czwartek">
+        <h3>Czwartek</h3>
+        <ul></ul>
+      </div>
+      <div id="piątek">
+        <h3>Piątek</h3>
+        <ul></ul>
+      </div>
+      <div id="sobota">
+        <h3>Sobota</h3>
+        <ul></ul>
+      </div>
+      <div id="niedziela">
+        <h3>Niedziela</h3>
+        <ul></ul>
+      </div>
+    </div>
+    <script src="plan_creator.js"></script>
+</body>
+</html>
